@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from './Header';
-
 import { useSelector } from 'react-redux';
 
 const Item = () => {
@@ -8,7 +6,6 @@ const Item = () => {
   console.log(data)
   return (
     <>
-      <Header />
       <div className='item'>
         <h2>{`Details Page For Post With ID ${data.id}`}</h2>
 

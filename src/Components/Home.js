@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../redux/actions/actionType";
 import { NavLink } from 'react-router-dom';
-import Header from './Header';
 import detailsPage from '../redux/actions/singleProduct';
 const Home = () => {
 
@@ -18,14 +17,13 @@ const Home = () => {
   if(loading){
     return <div>Loading...</div>
   }
-  
+
   if(error){
      return <div>Error: {error}</div>;
   }
 
   return (
     <React.Fragment>
-     <Header />
       <div className='home'>
         <div className='grid-container'>
           {
